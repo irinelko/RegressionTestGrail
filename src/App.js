@@ -1,4 +1,4 @@
-import logo from './SSdraw.png';
+import logo from './ss.png';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIN profile
+          LinkedIN
         </a>
       </header>
     </div>
