@@ -1,0 +1,6 @@
+type Websites @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Adress: String
+  Owner: String
+}

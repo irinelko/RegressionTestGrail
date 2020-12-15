@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "RegressionTestGrail",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-regressiontestgrail-staging-171513-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/ad3c8c30e2a4f64f60492759c149008d830f9152"
+}
