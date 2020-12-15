@@ -1,6 +1,7 @@
 import logo from './ss-w.png';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
@@ -10,14 +11,23 @@ function App() {
           Irinel Tapalaga
         </p>
         <a
-          className="App-link"
+          className="LinkedIN-link"
           href="https://www.linkedin.com/in/irinel-tapalaga/"
           target="_blank"
           rel="noopener noreferrer"
         >
           LinkedIN
         </a>
+        <a
+          className="Git-link"
+          href="https://github.com/irinelko/RegressionTestGrail"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </header>
+      <AmplifySignOut />
     </div>
   );
 }

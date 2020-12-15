@@ -1,0 +1,67 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-regressiontestgrail-staging-171513-authRole",
+      "UnauthRoleArn": "arn:aws:iam::231883714481:role/amplify-regressiontestgrail-staging-171513-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::231883714481:role/amplify-regressiontestgrail-staging-171513-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-regressiontestgrail-staging-171513-deployment",
+      "UnauthRoleName": "amplify-regressiontestgrail-staging-171513-unauthRole",
+      "StackName": "amplify-regressiontestgrail-staging-171513",
+      "StackId": "arn:aws:cloudformation:us-east-1:231883714481:stack/amplify-regressiontestgrail-staging-171513/c3744e70-3d66-11eb-bbf4-120f9e9763df",
+      "AmplifyAppId": "d2gy4x7fz6ts6p"
+    }
+  },
+  "api": {
+    "RegressionTestGrail": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "4pypuhkix5h7hdfacg3x3r5xjy",
+        "GraphQLAPIEndpointOutput": "https://g437zb4bizgtbkygedqgrnnzwa.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-bf7h2xm34bdezcsssu4g7h74na"
+      },
+      "lastPushTimeStamp": "2020-12-13T22:54:28.316Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-regressiontestgrail-staging-171513-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiRegressionTestGrail"
+      }
+    }
+  },
+  "auth": {
+    "RegressionTestGrail": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "AppClientSecret": "irt6o8fu8mspbonngc2cv4fgf05i4277g5e0q2abidp9hidse21",
+        "UserPoolId": "us-east-1_5zbpzMQA2",
+        "AppClientIDWeb": "56sqns0hoe9kqm7m2ckdgr4fdv",
+        "AppClientID": "46a4db4s0m2cmomi6s7onp9p23",
+        "IdentityPoolId": "us-east-1:f96d5c90-ec4b-4c6f-806d-1fe4974719b4",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "RegressionTestGrail"
+      },
+      "lastPushTimeStamp": "2020-12-13T22:54:28.323Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-regressiontestgrail-staging-171513-deployment/amplify-cfn-templates/auth/RegressionTestGrail-cloudformation-template.yml",
+        "logicalId": "authRegressionTestGrail"
+      }
+    }
+  }
+}
