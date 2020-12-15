@@ -27,7 +27,7 @@ function App() {
           GitHub
         </a>
       </header>
-      <AmplifySignOut />
+
     </div>
   );
 }
